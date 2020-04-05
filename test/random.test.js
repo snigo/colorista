@@ -1,5 +1,5 @@
 import Range from '@lost-types/range';
-import { Color } from '@lost-types/color';
+import Color from '@lost-types/color';
 import { contrast } from '../src/contrast';
 import { randomRgbColor, randomHslColor, randomByContrast } from '../src/random';
 

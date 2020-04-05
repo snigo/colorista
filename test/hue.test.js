@@ -1,4 +1,4 @@
-import { Color } from '@lost-types/color';
+import Color from '@lost-types/color';
 import {
   getHueByOffset,
   getTone,

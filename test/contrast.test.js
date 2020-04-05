@@ -1,4 +1,4 @@
-import { Color } from '@lost-types/color';
+import Color from '@lost-types/color';
 import { approx } from '@lost-types/mathx';
 import { contrast, findByContrast } from '../src/contrast';
 
