@@ -1,1 +1,3 @@
-# index-library-template
+# Colorista
+
+Helper functionsto work with Color.
