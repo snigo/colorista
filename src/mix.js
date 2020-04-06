@@ -1,5 +1,5 @@
-import Range from '@lost-types/range';
 import Color from '@lost-types/color';
+import Range from '@lost-types/range';
 import { round } from '@lost-types/mathx';
 
 const alphaRange = new Range(1);
