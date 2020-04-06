@@ -1,6 +1,6 @@
 {
   "name": "@lost-types/colorista",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Colorista - helper functions for Color",
   "main": "lib/index.js",
   "files": [
