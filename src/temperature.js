@@ -9,7 +9,7 @@ const COLD_FILTER = [67, 162, 237];
 
 
 /**
- * Return warmer version of the provided color with given factor and filter
+ * Returns warmer version of the provided color with given factor and filter
  *
  * @param {Color} color Color to be modified
  * @param {number} intensity Intensity of the filter, number within [0...1] range
@@ -23,7 +23,7 @@ function warmer(color, intensity = 0.2, filter = WARM_FILTER) {
 
 
 /**
- * Return cooler version of the provided color with given factor and filter
+ * Returns cooler version of the provided color with given factor and filter
  *
  * @param {Color} color Color to be modified
  * @param {number} intensity Intensity of the filter, number within [0...1] range
