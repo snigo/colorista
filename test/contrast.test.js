@@ -16,10 +16,10 @@ test('constrast function should throw if color is incorrect', () => {
 
 test('findByContrast function should find color with given hue, saturation and target contrast values', () => {
   const base = new Color([255, 255, 255]);
-  const color = findByContrast(234, 80, base, 4.5);
+  const color = findByContrast(234, 0.8, base, 4.5);
 
   expect(color instanceof Color).toBe(true);
   expect(color.hue).toBe(234);
-  expect(color.saturation).toBe(80);
+  expect(color.saturation).toBe(0.8);
   expect(approx(contrast(color, base), 4.5, 0.05)).toBe(true);
 });

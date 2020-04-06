@@ -23,24 +23,24 @@ test('randomRgbColor gererates random color', () => {
 test('randomHslColor gererates random color', () => {
   const totallyRandom = randomHslColor();
   const hueRange = new Range(359);
-  const hslRange = new Range(100);
+  const percentRange = new Range(1);
 
   expect(totallyRandom).toBeInstanceOf(Color);
   expect(hueRange.has(totallyRandom.hue)).toBe(true);
-  expect(hslRange.has(totallyRandom.saturation)).toBe(true);
-  expect(hslRange.has(totallyRandom.lightness)).toBe(true);
+  expect(percentRange.has(totallyRandom.saturation)).toBe(true);
+  expect(percentRange.has(totallyRandom.lightness)).toBe(true);
 
-  const rangedAndFixed = randomRgbColor([0, 359], [75, 95], 50);
-  const saturationRange = new Range(75, 95);
+  const rangedAndFixed = randomHslColor([0, 359], [0.75, 0.95], 0.5);
+  const saturationRange = new Range(0.75, 0.95);
 
   expect(hueRange.has(rangedAndFixed.hue)).toBe(true);
   expect(saturationRange.has(rangedAndFixed.saturation)).toBe(true);
-  expect(rangedAndFixed.lightness).toBe(0);
+  expect(rangedAndFixed.lightness).toBe(0.5);
 });
 
 test('randomByContrast function should generate random color', () => {
-  const randomColor = randomByContrast(4.5, 'white', [60, 100]);
-  const saturationRange = new Range(60, 100);
+  const randomColor = randomByContrast(4.5, 'white', [0.6, 1]);
+  const saturationRange = new Range(0.6, 1);
 
   expect(randomColor).toBeInstanceOf(Color);
   expect(saturationRange.has(randomColor.saturation)).toBe(true);
